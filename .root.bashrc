@@ -53,11 +53,10 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-
-# Noel's cool color prompt
+# Noel's cool color root prompt
 if [ "$color_prompt" = yes ]; then
 
-    PS1="\[\e[0;37m\]┌─[${root}\u\[\e[0;37m\]][\[\e[0;96m\]\h\[\e[0;37m\]][\[\e[0;92m\]\w\[\e[0;37m\]]\n\[\e[0;37m\]└╼ \[\e[0m\]"
+    PS1="\[\e[0;97m\]┌─[${root}\u\[\e[0;97m\]][\[\e[0;91m\]\h\[\e[0;37m\]][\[\e[0;92m\]\w\[\e[0;37m\]]\n\[\e[0;37m\]└╼ \[\e[0m\]"
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -111,4 +110,3 @@ PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 
 # Set editor to Vim
 export EDITOR=vim
-
